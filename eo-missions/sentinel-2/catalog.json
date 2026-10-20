@@ -290,6 +290,12 @@
       "href": "../../products/arceme-datacubes-emdat/collection.json",
       "type": "application/json",
       "title": "ARCEME Data Cubes - EM-DAT Disaster Sites"
+    },
+    {
+      "rel": "child",
+      "href": "../../products/alternaria-tomato-risk-po-valley/collection.json",
+      "type": "application/json",
+      "title": "Field-scale Alternaria disease and mycotoxin risk for processing tomato, Po Valley, 2020 to 2025"
     }
   ],
   "updated": "2024-08-27T17:27:42.174831Z",

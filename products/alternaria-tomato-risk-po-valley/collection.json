@@ -1,0 +1,186 @@
+{
+  "type": "Collection",
+  "id": "alternaria-tomato-risk-po-valley",
+  "stac_version": "1.0.0",
+  "description": "For every processing-tomato field classified from Sentinel-2 in Piedmont, Lombardy, Veneto and Emilia-Romagna (Italy), seasons 2020 to 2025, the ALT-tomato model (Salotti et al., 2026) was run from the field's own Sentinel-2 transplant date to its own harvest date, with the hourly ERA5-Land weather of the 0.1° cell the field lies in. The model was run at four disease management levels, and a 3,000-draw Monte Carlo propagated the management, transplant-date and inoculum uncertainty. Every value is a direct model run: no emulator, no interpolation.",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json",
+      "title": "Open Science Catalog"
+    },
+    {
+      "rel": "via",
+      "href": "https://dashboard.eoagritwin.eu",
+      "type": "text/html",
+      "title": "Interactive dashboard (EOAgriTwin What-If)"
+    },
+    {
+      "rel": "via",
+      "href": "https://www.eoagritwin.eu/",
+      "type": "text/html",
+      "title": "Project website"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json",
+      "title": "Products"
+    },
+    {
+      "rel": "related",
+      "href": "../../projects/eoagritwin/collection.json",
+      "type": "application/json",
+      "title": "Project: EOAgriTwin - Earth Observation based Digital Twin for Resilient Agriculture under Multiple Stressors"
+    },
+    {
+      "rel": "related",
+      "href": "../../themes/land/catalog.json",
+      "type": "application/json",
+      "title": "Theme: Land"
+    },
+    {
+      "rel": "related",
+      "href": "../../variables/crop-type-masks/catalog.json",
+      "type": "application/json",
+      "title": "Variable: Crop Type Masks"
+    },
+    {
+      "rel": "related",
+      "href": "../../variables/biological-hazards/catalog.json",
+      "type": "application/json",
+      "title": "Variable: Biological Hazards"
+    },
+    {
+      "rel": "related",
+      "href": "../../eo-missions/sentinel-2/catalog.json",
+      "type": "application/json",
+      "title": "EO Mission: Sentinel-2"
+    },
+    {
+      "rel": "self",
+      "href": "https://esa-earthcode.github.io/open-science-catalog-metadata/products/alternaria-tomato-risk-po-valley/collection.json",
+      "type": "application/json"
+    }
+  ],
+  "stac_extensions": [
+    "https://stac-extensions.github.io/osc/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/themes/v1.0.0/schema.json",
+    "https://stac-extensions.github.io/cf/v0.2.0/schema.json",
+    "https://stac-extensions.github.io/contacts/v0.1.1/schema.json"
+  ],
+  "osc:project": "eoagritwin",
+  "osc:status": "ongoing",
+  "osc:region": "Po Valley, Italy",
+  "osc:type": "product",
+  "created": "2026-10-20T00:00:00Z",
+  "updated": "2026-10-20T00:00:00Z",
+  "cf:parameter": [
+    {
+      "name": "audpc",
+      "unit": "fraction day"
+    },
+    {
+      "name": "final_diseased_fraction",
+      "unit": "1"
+    },
+    {
+      "name": "diseased_fraction",
+      "unit": "1"
+    },
+    {
+      "name": "tea_index",
+      "unit": "1"
+    },
+    {
+      "name": "aoh_index",
+      "unit": "1"
+    },
+    {
+      "name": "ame_index",
+      "unit": "1"
+    },
+    {
+      "name": "audpc_spread_p95_p5",
+      "unit": "fraction day"
+    },
+    {
+      "name": "tomato_probability",
+      "unit": "1"
+    },
+    {
+      "name": "transplant_doy",
+      "unit": "day of year"
+    },
+    {
+      "name": "harvest_doy",
+      "unit": "day of year"
+    }
+  ],
+  "themes": [
+    {
+      "scheme": "https://github.com/stac-extensions/osc#theme",
+      "concepts": [
+        {
+          "id": "land"
+        }
+      ]
+    }
+  ],
+  "osc:variables": [
+    "crop-type-masks",
+    "biological-hazards"
+  ],
+  "osc:missions": [
+    "sentinel-2"
+  ],
+  "contacts": [
+    {
+      "name": "Michele Croci",
+      "organization": "Università Cattolica del Sacro Cuore, DI.PRO.VE.S.",
+      "roles": [
+        "principal_investigator"
+      ],
+      "emails": [
+        {
+          "value": "michele.croci@unicatt.it"
+        }
+      ]
+    }
+  ],
+  "title": "Field-scale Alternaria disease and mycotoxin risk for processing tomato, Po Valley, 2020 to 2025",
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          7.35,
+          43.75,
+          12.75,
+          45.85
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2020-01-01T00:00:00Z",
+          "2025-12-31T23:59:59Z"
+        ]
+      ]
+    }
+  },
+  "license": "CC-BY-4.0",
+  "keywords": [
+    "Alternaria",
+    "processing tomato",
+    "mycotoxins",
+    "tenuazonic acid",
+    "plant disease model",
+    "Sentinel-2",
+    "crop phenology",
+    "ERA5-Land",
+    "Po Valley",
+    "EOAgriTwin"
+  ]
+}

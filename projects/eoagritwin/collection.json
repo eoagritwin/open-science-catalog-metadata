@@ -26,6 +26,12 @@
       "href": "../../themes/land/catalog.json",
       "type": "application/json",
       "title": "Theme: Land"
+    },
+    {
+      "rel": "child",
+      "href": "../../products/alternaria-tomato-risk-po-valley/collection.json",
+      "type": "application/json",
+      "title": "Field-scale Alternaria disease and mycotoxin risk for processing tomato, Po Valley, 2020 to 2025"
     }
   ],
   "stac_extensions": [

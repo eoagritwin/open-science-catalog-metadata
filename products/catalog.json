@@ -2168,6 +2168,12 @@
       "href": "./coastdyn-adt-rep-2d-dataset/collection.json",
       "type": "application/json",
       "title": "ESA COASTDyn - European Seas Gridded MIOST L4 Sea Surface Heights And Derived Variables"
+    },
+    {
+      "rel": "child",
+      "href": "./alternaria-tomato-risk-po-valley/collection.json",
+      "type": "application/json",
+      "title": "Field-scale Alternaria disease and mycotoxin risk for processing tomato, Po Valley, 2020 to 2025"
     }
   ],
   "updated": "2024-09-12T20:32:22.975110Z",
